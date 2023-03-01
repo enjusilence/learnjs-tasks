@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <script>
+      let n = prompt('Введите n');
+      let result = [];
+      outer: for (let i = 2; i <= n; i++) {
+        for (let j of result) {
+          if (i % j == 0) continue outer;
+        }
+        result.push(i);
+      }
+      alert(result);
+    </script>
+  </body>
+</html>
